@@ -14,4 +14,5 @@ review du 09/03/17 :
 - A finir : 
   - finir le fichier ActivityInsertBD 
   - finir la creation de bd si etienne a pas fini
+  - PS : j'ai fait de la merde avec les fichier, y en  a en trop qui servent à rien , ils faut les supprimer
   
