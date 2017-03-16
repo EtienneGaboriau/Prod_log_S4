@@ -3,6 +3,7 @@
 
 import csv
 from Activity import Activity
+from activityInsertBD import actInsertBD
 
 #ca marche!
 def activityImport(fichier):
@@ -11,11 +12,16 @@ def activityImport(fichier):
         #on lit le fichier
         reader = csv.reader(file)
 
+        i = 0
+
         #pour chaque ligne, on la transforme en activité et on l'insert dans la BD
         for row in reader:
-            act = Activity(row[5],row[2])
-            #print(act)
-            #activityInsertBD(act)
+            #on ignore la première ligne qui contient les en-tetes
+            if(i != 0):
+                act = Activity(row[5],row[2])
+                print(act)
+                actInsertBD(act)
+            i += 1
 
     #except:
     #    print("erreur, pas normal!!!")

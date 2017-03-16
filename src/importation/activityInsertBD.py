@@ -1,18 +1,22 @@
 #!/usr/bin/env python
 #fichier qui insert l'activité dans la bd
 
-import mysql.connector
+import mysql.connector as mysql
 from Activity import Activity
 
-def activityInsertBD(act):
-    conn = mysql.connector.connect(host="localhost",user="root",password="XXX", database="test1")
-    cursor = conn.cursor()
-
-    #tester ce truc
-    activity = {"name" : act.name, "num" : act.num}
-
-    #compléter celui la
-    #cursor.execute("""INSERT INTO users (name, age) VALUES(%(name)s, %(age)s)""", user)
+def actInsertBD(act):
+    #try:
+        conn = mysql.connect(user='E155693G',password='E155693G',host='infoweb', database='E155693G')
+        cursor = conn.cursor()
 
 
-    conn.close()
+        sql= "INSERT INTO activites (id_act, nom) VALUES({1},{2})".format(act.num,act.name)
+        #sql= "INSERT INTO activites (id_act, nom) VALUES(12345,'foot')"
+        print(sql)
+        cursor.execute(sql)
+
+
+        conn.close()
+
+    #except:
+    #    print("pas content")
