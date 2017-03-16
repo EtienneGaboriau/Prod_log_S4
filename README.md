@@ -20,7 +20,9 @@ review du 09/03/17 :
   
 review du 16/03/17 :
 - Fait :
-  - création bd 
+  - création bd
+  - réorganisation des fichiers
+  - j'ai supprimé les fichiers inutiles
   
   
 - A faire /finir :
