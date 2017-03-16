@@ -23,6 +23,16 @@ review du 16/03/17 :
   - création bd
   - réorganisation des fichiers
   - j'ai supprimé les fichiers inutiles
+  - blockage sur pb insert bd
   
   
 - A faire /finir :
+  - "copier coller" tout les fichiers de activity pour faire les instalations/équiements
+  - remplir table équipAct
+  - voir le truc que clement a envoyer pour régler le pb des insert
+  - FAUT FINIR LA PARTIE CREATION BD IMPORTANT!!!
+  - si on avance bien, faire des getter pour la bd (ex: pouvoir récupérer les équipement d'une ville)
+  
+  review du 23/03/17 :
+  
+  
