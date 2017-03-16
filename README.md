@@ -30,7 +30,7 @@ review du 16/03/17 :
   - "copier coller" tout les fichiers de activity pour faire les instalations/équiements
   - remplir table équipAct
   - voir le truc que clement a envoyer pour régler le pb des insert
-  - FAUT FINIR LA PARTIE CREATION BD IMPORTANT!!!
+  - FAUT FINIR LA PARTIE REMPLISSAGE BD IMPORTANT!!!
   - si on avance bien, faire des getter pour la bd (ex: pouvoir récupérer les équipement d'une ville)
   
   review du 23/03/17 :
