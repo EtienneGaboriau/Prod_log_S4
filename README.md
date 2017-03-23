@@ -34,7 +34,9 @@ review du 16/03/17 :
 review du 23/03/17 :
 - Fait :
   - pb de insert résolu, il manquait juste le commit() à la fin !!!!!!!!!!
-  - importations des tables activity, installations
+  - importations de toutes les tables fini
   
 - A faire /finir :
+  - voir le truc avec bottle et avancer sur ca
+  - faire les getters intéressant pour la bd
   
