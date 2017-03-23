@@ -2,11 +2,11 @@
 #fichier qui cherche les lignes dans le csv
 
 import csv
-from Activity import Activity
-from activityInsertBD import actInsertBD
+from Equipement import Equipement
+from equipementInsertBD import equInsertBD
 
 #ca marche!
-def activityImport(fichier):
+def equipementImport(fichier):
     file = open(fichier, "r")
     try:
         #on lit le fichier
@@ -23,8 +23,8 @@ def activityImport(fichier):
                 actInsertBD(act)
             i += 1
 
-    #except:
-    #    print("erreur, pas normal!!!")
+    except:
+        print("erreur, pas normal!!!")
 
     finally:
         file.close()

@@ -2,14 +2,14 @@
 #fichier qui insert l'activité dans la bd
 
 import mysql.connector as mysql
-from Activity import Activity
+from Equipement import Equipement
 
-def actInsertBD(act):
+def equInsertBD(act):
     try:
         conn = mysql.connect(user='E155693G',password='E155693G',host='infoweb', database='E155693G')
         cursor = conn.cursor()
 
-        sql= """INSERT INTO E155693G.activites (id_act, nom) VALUES (%s, %s);"""
+        sql= """INSERT INTO E155693G.equipement (id_act, nom) VALUES (%s, %s);"""
 
 
         cursor.execute(sql, (act.num, act.name))
@@ -20,7 +20,7 @@ def actInsertBD(act):
 
 
     except:
-        print("pas content")
+        print("pas content/surement id dupliqué")
 
     finally:
         conn.close()

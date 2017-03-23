@@ -2,11 +2,11 @@
 #fichier qui cherche les lignes dans le csv
 
 import csv
-from Activity import Activity
-from activityInsertBD import actInsertBD
+from Installation import Installation
+from installationInsertBD import instalInsertBD
 
 #ca marche!
-def activityImport(fichier):
+def installationImport(fichier):
     file = open(fichier, "r")
     try:
         #on lit le fichier

@@ -2,9 +2,9 @@
 #fichier qui insert l'activité dans la bd
 
 import mysql.connector as mysql
-from Activity import Activity
+from Installation import Installation
 
-def actInsertBD(act):
+def instalInsertBD(act):
     try:
         conn = mysql.connect(user='E155693G',password='E155693G',host='infoweb', database='E155693G')
         cursor = conn.cursor()
