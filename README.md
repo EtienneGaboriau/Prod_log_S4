@@ -35,6 +35,7 @@ review du 23/03/17 :
 - Fait :
   - pb de insert résolu, il manquait juste le commit() à la fin !!!!!!!!!!
   - importations de toutes les tables fini
+  - organisation des fichiers dans le dossier "importation"
   
 - A faire /finir :
   - voir le truc avec bottle et avancer sur ca
