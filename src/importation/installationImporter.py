@@ -6,7 +6,7 @@ from Installation import Installation
 from installationInsertBD import instalInsertBD
 
 #ca marche!
-def installationImport(fichier):
+def instalImport(fichier):
     file = open(fichier, "r")
     try:
         #on lit le fichier
@@ -18,9 +18,9 @@ def installationImport(fichier):
         for row in reader:
             #on ignore la première ligne qui contient les en-tetes
             if(i != 0):
-                act = Activity(row[5],row[4])
-                print(act)
-                actInsertBD(act)
+                instal = Installation(row[1], row[0], row[4], row[2], row[9], row[10])
+                print(instal)
+                instalInsertBD(instal)
             i += 1
 
     #except:
