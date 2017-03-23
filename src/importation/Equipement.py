@@ -9,4 +9,4 @@ class Equipement:
         self.num_instal = num_i
 
     def __repr__(self):
-        return "({0} - {1})".format(self.nom, self.num)
+        return "({0} - {2})".format(self.nom, self.num, self.num_instal)

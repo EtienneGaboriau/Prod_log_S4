@@ -18,13 +18,13 @@ def equipementImport(fichier):
         for row in reader:
             #on ignore la première ligne qui contient les en-tetes
             if(i != 0):
-                act = Activity(row[5],row[4])
-                print(act)
-                actInsertBD(act)
+                eq = Equipement(row[4],row[5], row[2])
+                print(eq)
+                equInsertBD(eq)
             i += 1
 
-    except:
-        print("erreur, pas normal!!!")
+    #except:
+    #    print("erreur, pas normal!!!")
 
     finally:
         file.close()
