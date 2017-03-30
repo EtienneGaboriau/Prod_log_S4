@@ -41,3 +41,14 @@ review du 23/03/17 :
   - voir le truc avec bottle et avancer sur ca
   - faire les getters intéressant pour la bd
   
+  
+review du 30/03/17 :
+- Fait :
+
+  
+- A faire /finir :
+
+  
+  
+  
+  
