@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#fichier qui cherche les lignes dans le csv
+#fichier qui prend les lignes dans le csv et les insert
 
 import csv
 from Activity import Activity
