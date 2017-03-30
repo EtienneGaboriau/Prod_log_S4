@@ -1,8 +1,11 @@
 import mysql.connector as mysql
 
 try:
+    #connexion à la bd
     conn = mysql.connect(user='E155693G',password='E155693G',host='infoweb', database='E155693G')
     cursor = conn.cursor()
+
+    #creation de la table installations
     cursor.execute("CREATE TABLE installations (\
                         num_instal int(20) DEFAULT NULL,\
                         nom varchar(500) DEFAULT NULL,\
@@ -12,6 +15,8 @@ try:
                         longitude decimal(25,20) DEFAULT NULL,\
                         PRIMARY KEY(num_instal)\
                     )")
+
+    #creation de la table equipements
     cursor.execute("CREATE TABLE equipements (\
                         id_equip int(20) DEFAULT NULL,\
                         nom varchar(50) DEFAULT NULL,\
@@ -19,11 +24,15 @@ try:
                         PRIMARY KEY(id_equip),\
                         FOREIGN KEY(num_instal) REFERENCES installations(num_instal)\
                     )")
+
+    #creation de la table activites
     cursor.execute("CREATE TABLE activites (\
                         id_act int(20) DEFAULT NULL,\
                         nom varchar(500) DEFAULT NULL,\
                         PRIMARY KEY(id_act)\
                     )")
+
+    #creation de la table de jointure equip_act
     cursor.execute("CREATE TABLE equip_act (\
                         id_equip int(20) DEFAULT NULL,\
                         id_act int(20) DEFAULT NULL,\

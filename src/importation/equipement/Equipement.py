@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#classe Installation
+#classe Equipement
 
 class Equipement:
 

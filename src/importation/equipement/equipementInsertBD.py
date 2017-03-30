@@ -6,21 +6,20 @@ from Equipement import Equipement
 
 def equInsertBD(act):
     try:
+
+        #connexion à la bd
         conn = mysql.connect(user='E155693G',password='E155693G',host='infoweb', database='E155693G')
         cursor = conn.cursor()
 
+        #exécution du sql (insertion dans la bd)
         sql= """INSERT INTO E155693G.equipements (id_equip, nom, num_instal) VALUES (%s, %s, %s);"""
-
-
         cursor.execute(sql, (act.num, act.nom, act.num_instal))
         print("ok")
 
-        cursor.close()
-        conn.commit()
-
-
-    #except:
-    #    print("pas content/surement id dupliqué")
+    except:
+        print("erreur / duplication d'id")
 
     finally:
+        cursor.close()
+        conn.commit()
         conn.close()

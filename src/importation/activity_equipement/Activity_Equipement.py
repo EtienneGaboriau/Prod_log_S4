@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#classe Activity
+#classe Activity_Equipement
 
 class Activity_Equipement:
 
