@@ -45,7 +45,10 @@ review du 23/03/17 :
 review du 30/03/17 :
 - Fait :
   - une base avec bottle
-  - getters
+    -> le truc de bottle marche pas comme je veux
+        -> faire gaffe au chemin !!!
+  - getters plus ou moins (Etienne)
 
 
 - A faire /finir :
+  -finir ce qu'on a commencer

@@ -18,7 +18,7 @@ def actInsertBD(act):
 
 
     except:
-        print("pas content")
+        print("erreur / duplication d'id")
 
     finally:
         cursor.close()
