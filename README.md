@@ -51,4 +51,13 @@ review du 30/03/17 :
 
 
 - A faire /finir :
-  -finir ce qu'on a commencer
+  - finir ce qu'on a commencer
+  
+review du 03/04/17 : //oui on est en retard, et alors ??
+- Fait :
+  - préparation des trucs à finir pour demain parce que ca marche pas trop sous windows (bloque des ports, des imports...)
+
+
+- A faire /finir :
+  - finir les getter (étienne)
+  - à recheck : ajax -> formatage des jsonObj, route bottle
