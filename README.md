@@ -1,6 +1,17 @@
 # Prod_log_S4
 Projet de production logiciel en python.
 
+----------------------------
+Utilisation :
+
+mettez vous dans le répertoire src :
+cd Prod_log_S4/src
+
+vous avez donc lancé le serveur, vous pouvez maintenant vous y connecter à l'addresse :
+http://localhost:10078/
+
+----------------------------
+
 "man" git : https://services.github.com/on-demand/downloads/fr/github-git-cheat-sheet.pdf
 
 review du 09/03/17 :
@@ -52,7 +63,7 @@ review du 30/03/17 :
 
 - A faire /finir :
   - finir ce qu'on a commencer
-  
+
 review du 03/04/17 : //oui on est en retard, et alors ??
 - Fait :
   - préparation des trucs à finir pour demain parce que ca marche pas trop sous windows (bloque des ports, des imports...)
@@ -61,3 +72,17 @@ review du 03/04/17 : //oui on est en retard, et alors ??
 - A faire /finir :
   - finir les getter (étienne)
   - à recheck : ajax -> formatage des jsonObj, route bottle
+
+last-review (04/04/17):
+- Fait :
+  - des getters de base de données
+  - une route -> qui renvoie du json
+  - début de recherche via la page html-> pb de formatage de la chaine json?
+
+- Ce qui marche pas:
+  - la recherche via page html
+
+- ce qui reste à faire
+  - plus de route et donc plus de getter.
+  - une vue cool pour le client.
+  -

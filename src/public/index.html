@@ -3,17 +3,24 @@
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <meta http-equiv="Content-Language" content="fr" />
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ <script type="text/javascript" src=js></script>
  <title>
   Installations Sportives en Pays de Loire
  </title>
 </head>
 <body>
   <form>
-    <div>Ville</div>
-    <input name="ville"/>
-    <div>Activité</div>
-    <input name="act"/></br></br>
-    <input type=button name="rechercher" value="rechercher"/>
+    <label>Ville</label>
+    <input name="ville" type="text" id="ville"/>
+    <label>Activité</label>
+    <input name="act" type="text"/></br></br>
+    <input type=button name="rechercher" value="rechercher" id="rechercher"/>
   </form>
+
+  <div id="reponse">
+    <!--mettre la réponse ajax ici et la formater-->
+  </div>
 </body>
 </html>
