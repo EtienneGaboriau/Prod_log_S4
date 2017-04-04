@@ -2,6 +2,10 @@
 Projet de production logiciel en python.
 
 ----------------------------
+
+
+
+
 Utilisation :
 
 mettez vous dans le répertoire src :
@@ -9,6 +13,11 @@ cd Prod_log_S4/src
 
 vous avez donc lancé le serveur, vous pouvez maintenant vous y connecter à l'addresse :
 http://localhost:10078/
+
+
+
+
+
 
 ----------------------------
 
@@ -70,14 +79,14 @@ review du 03/04/17 : //oui on est en retard, et alors ??
 
 
 - A faire /finir :
-  - finir les getter (étienne)
+  - finir les getter
   - à recheck : ajax -> formatage des jsonObj, route bottle
 
 last-review (04/04/17):
 - Fait :
   - des getters de base de données
   - une route -> qui renvoie du json
-  - début de recherche via la page html-> pb de formatage de la chaine json?
+  - début de recherche via la page html (ajax)-> pb de formatage de la chaine json?
 
 - Ce qui marche pas:
   - la recherche via page html
@@ -85,4 +94,5 @@ last-review (04/04/17):
 - ce qui reste à faire
   - plus de route et donc plus de getter.
   - une vue cool pour le client.
-  -
+  - faire un fichier pour import toute la bd d'un coup, ca serait plus pratique.
+  - ajouter une google map pour l'affichage des résultats
