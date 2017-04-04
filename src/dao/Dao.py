@@ -39,46 +39,57 @@ def get_Equipement(ville):
         conn = mysql.connect(user='E155693G',password='E155693G',host='infoweb', database='E155693G')
         cursor = conn.cursor()
         instal, test = get_Installation(ville)
-        #test.append(instal[0][0])
         row=[]
         equip=[]
-        #print (test[0])
         i=0
         while test is not None and i<len(test):
-            #print (instal[0], test[0])
             test1 = str(test[i])
-            #print(test1)
             sql= "SELECT nom, id_equip FROM E155693G.equipements where equipements.num_instal= "+test1+";"
             cursor.execute(sql)
-            equip= equ = cursor.fetchall()
-            #print(equip)
+            equip.insert(i,cursor.fetchall())
             i+=1
 
         equ=[]
         num_equip=[]
 
         if(len(equip)>0):
-            i=0
-            while equip is not None and i<len(equip):
+            k=0
+            while equip is not None and k<len(equip):
                 j=0
-                while equip[i] is not None and j<len(equip[i]):
-                    tes=equip[i][j]
-                    #print(tes)
-                    print (j)
-                    print(i)
-                    equ.insert(i,tes)
-                    num_equip.insert(i,equip[i][j])
-                    j+=1
-                i+=1
-
-        #print("ok")
-
+                while equip[k] is not None and j<len(equip[k]):
+                    tes=equip[k][0]
+                    equ.insert(k,tes)
+                    j+=2
+                k+=1
         cursor.close()
         conn.commit()
-
+        return equ
 
     #except:
      #  print("erreur de connexion/requete")
 
     finally:
         conn.close()
+
+
+
+
+"""def Villecomplete(mot):
+    try:
+        res=[]
+        userCo, passwordCO, hostCo, databaseCo = getConnexion()
+        cnx = mysql.connect(user=userCo, password=passwordCO, host=hostCo, database=databaseCo)
+        # on récupère toutes les villes qui correspondent à ce que la personne vient de taper
+        cursor = cnx.cursor()
+        cursor.execute("SELECT `ville` FROM `installations` WHERE `ville` LIKE \'"+mot+"%\' ")
+        listeville=cursor.fetchall()
+        for ville in listeville:
+            if ville[0] not in res:
+                res.append(ville[0])
+        # on retourne la liste des villes qui correspondent
+        return res
+    except Exception as e:
+        print(e)
+    finally:
+        cursor.close()
+cnx.close()"""
