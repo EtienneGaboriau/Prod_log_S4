@@ -58,14 +58,14 @@ review du 23/03/17 :
   - organisation des fichiers dans le dossier "importation"
 
 - A faire /finir :
-  - voir le truc avec bottle et avancer sur ca
+  - voir la librairie bottle et avancer sur ca
   - faire les getters intéressant pour la bd
 
 
 review du 30/03/17 :
 - Fait :
   - une base avec bottle
-    -> le truc de bottle marche pas comme je veux
+    -> bottle marche pas comme je veux
         -> faire gaffe au chemin !!!
   - getters plus ou moins (Etienne)
 
@@ -82,7 +82,7 @@ review du 03/04/17 : //oui on est en retard, et alors ??
   - finir les getter
   - à recheck : ajax -> formatage des jsonObj, route bottle
 
-last-review (04/04/17):
+LAST REVIEW (04/04/17):
 - Fait :
   - des getters de base de données
   - une route -> qui renvoie du json
